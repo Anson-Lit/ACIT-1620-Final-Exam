@@ -5,3 +5,12 @@ body {
 div img {
     width: 20%;
 }
+
+
+/* width of screen should be 640px  */
+
+@media (min-width:640px) {
+    body {
+        background-color: green;
+    }
+}
