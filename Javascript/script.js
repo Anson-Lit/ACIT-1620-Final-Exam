@@ -42,6 +42,6 @@ function checkInput() {
             }
         }
     } else {
-        alert("Enter valid command")
+        alert("Enter a valid command")
     }
 }
