@@ -17,14 +17,13 @@ addImages()
 
 
 thumb.addEventListener("mouseover", enlargephoto)
-thumb.addEventListener("mouseover", showFormElements)
 
 function showFormElements() {
-    control.classList.toggle("hidden")
-    thumb.removeEventListener("mouseover", showFormElements)
+    control.classList.remove("hidden")
 }
 
 function enlargephoto(evt) {
     let image = document.querySelector(".displayed-img")
     image.src = evt.target.src
+    showFormElements()
 }
