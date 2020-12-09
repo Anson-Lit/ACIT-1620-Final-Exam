@@ -12,8 +12,16 @@ div img {
     align-items: center;
 }
 
+#thumb-bar {
+    display: flex;
+    flex-shrink: 1;
+}
+
 @media (min-width:640px) {
     body {
         background-color: green;
+    }
+    .container {
+        width: 640px;
     }
 }
