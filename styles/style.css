@@ -10,8 +10,6 @@ div img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80vw;
-    position: relative;
 }
 
 .hidden {
@@ -21,6 +19,10 @@ div img {
 #thumb-bar {
     display: flex;
     flex-shrink: 1;
+}
+
+.displayed-img {
+    width: 100%;
 }
 
 @media (min-width:640px) {

@@ -1,10 +1,10 @@
 let control = document.querySelector(".control")
 let thumb = document.querySelector("#thumb-bar")
 
-control.classList.toggle("hidden")
 
 
-function looping() {
+
+function addImages() {
     let altarray = ["Eye", "Rock", "Purple Flowers", "Egyptian Art", "Butterfly"]
     for (let i = 1; i <= 5; i++) {
         let img = document.createElement("img");
@@ -13,6 +13,18 @@ function looping() {
         thumb.appendChild(img)
     }
 }
+addImages()
 
 
-looping()
+thumb.addEventListener("mouseover", enlargephoto)
+thumb.addEventListener("mouseover", showFormElements)
+
+function showFormElements() {
+    control.classList.toggle("hidden")
+    thumb.removeEventListener("mouseover", showFormElements)
+}
+
+function enlargephoto(evt) {
+    let image = document.querySelector(".displayed-img")
+    image.src = evt.target.src
+}
