@@ -6,8 +6,11 @@ div img {
     width: 20%;
 }
 
-
-/* width of screen should be 640px  */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 @media (min-width:640px) {
     body {
