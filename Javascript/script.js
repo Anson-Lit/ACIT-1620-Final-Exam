@@ -24,7 +24,6 @@ function showFormElements() {
 
 function enlargePhoto(evt) {
     image.src = evt.target.src
-    console.log(image.src)
     image.alt = evt.target.alt
     showFormElements()
 }
